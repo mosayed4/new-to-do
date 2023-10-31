@@ -1,80 +1,104 @@
+body {
+  background-color: gray;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+  width: 500px;
+  margin: 20px 50px auto;
+}
+.form {
+  background-color: #eee;
+  border-radius: 6px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+.input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  flex: 1;
+}
+.input:focus {
+  outline: none;
+}
+.add:hover {
+  transform: translate(0, 0);
+  box-shadow: 5px 5px 7px 0 rgba(0, 0, 0, 0.2);
+}
+.add {
+  border: none;
+  background-color: #808080;
+  color: white;
+  padding: 10px;
+  border-radius: 6px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.tasks {
+  background-color: #eee;
+  margin-top: 20px;
+  border-radius: 6px;
+  padding: 20px;
+}
+.tasks .task {
+  background-color: white;
+  padding: 10px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.3s;
+  cursor: pointer;
+  border: 1px solid #ccc;
+}
+.tasks .task:not(:last-child) {
+  margin-bottom: 15px;
+}
+.tasks .task:hover {
+  background-color: #f7f7f7;
+  box-shadow: 5px 5px 7px 0 rgba(0, 0, 0, 0.2);
+}
+.tasks .task.done {
+  opacity: 0.5;
+  background-color: rgb(0, 0, 0);
+}
+.tasks .task span {
+  font-weight: bold;
+  font-size: 10px;
+  background-color: rgb(162, 90, 8);
+  color: white;
+  padding: 2px 6px;
+  border-radius: 4px;
+  cursor: pointer;
+}
 
-      body {
-        background-color: gray
-        ;
-        font-family: Arial, Helvetica, sans-serif;
-      }
-      .container { 
-        width: 500px;
-        margin: 20px 50px  auto;
-        
+/*  task list  */
 
-      }
-      .form {
-        background-color: #eee;
-        border-radius: 6px;
-        padding: 20px;
-        display: flex;
-        align-items: center;
-      }
-      .input {
-        padding: 10px;
-        border: 1px solid #ddd;
-        border-radius: 6px;
-        flex: 1;
-      }
-      .input:focus {
-        outline: none;
-      }
-      .add:hover{
-        transform: translate(0, 0);
-        box-shadow: 5px 5px 7px 0 rgba(0, 0, 0, 0.2);
-      }
-      .add {
-        border: none;
-        background-color: #808080;
-        color: white;
-        padding: 10px;
-        border-radius: 6px;
-        margin-left: 10px;
-        cursor: pointer;
-      }
-      .tasks {
-        background-color: #eee;
-        margin-top: 20px;
-        border-radius: 6px;
-        padding: 20px;
-      }
-      .tasks .task {
-        background-color: white;
-        padding: 10px;
-        border-radius: 6px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        transition: 0.3s;
-        cursor: pointer;
-        border: 1px solid #ccc;
-      }
-      .tasks .task:not(:last-child) {
-        margin-bottom: 15px;
-      }
-      .tasks .task:hover {
-        background-color: #f7f7f7;
-        box-shadow: 5px 5px 7px 0 rgba(0, 0, 0, 0.2);
-
-      }
-      .tasks .task.done {
-        opacity: 0.5;
-        background-color: rgb(0, 0, 0);
-    
-      }
-      .tasks .task span {
-        font-weight: bold;
-        font-size: 10px;
-        background-color: rgb(162, 90, 8);
-        color: white;
-        padding: 2px 6px;
-        border-radius: 4px;
-        cursor: pointer;
-      } 
+.task-list1 {
+  background-color: #eee;
+  border-radius: 6px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+li {
+  background-color: white;
+  padding: 10px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.3s;
+  cursor: pointer;
+  border: 1px solid #ccc;
+}
+h2 {
+  text-align: center;
+}
+li:hover {
+  transform: translate(0, 0);
+  box-shadow: 5px 5px 7px 0 rgba(0, 0, 0, 0.2);
+  background-color: #f7f7f7;
+  box-shadow: 5px 5px 7px 0 rgba(0, 0, 0, 0.2);
+}

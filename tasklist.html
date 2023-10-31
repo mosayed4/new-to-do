@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task List</title> <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <h2 >The Task List</h2>
+    <div class="task-list1">
+    <ul id="task-list">
+        <!-- سيتم عرض المهام هنا -->
+    </ul></div>
+    <script>
+        // قم بجلب المهام المحفوظة من التخزين (Local Storage)
+        const savedTasks = JSON.parse(localStorage.getItem('tasks')) || []; 
+        
+        const taskList = document.getElementById('task-list');
+savedTasks.forEach(task => {
+  const listItem = document.createElement('li');
+  listItem.textContent = task.title;
+  taskList.appendChild(listItem);
+
+  // Log the task object to the console in JSON format
+//   console.log(JSON.stringify(task));
+});
+
+    </script>
+</body>
+</html>
