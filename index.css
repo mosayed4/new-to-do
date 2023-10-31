@@ -73,8 +73,7 @@ body {
   cursor: pointer;
 }
 
-/*  task list  */
-
+   
 .task-list1 {
   background-color: #eee;
   border-radius: 6px;
@@ -82,8 +81,8 @@ body {
   display: flex;
   align-items: center;
 }
-li {
-  background-color: white;
+/* li { */
+  /* background-color: white;
   padding: 10px;
   border-radius: 6px;
   display: flex;
@@ -91,14 +90,14 @@ li {
   align-items: center;
   transition: 0.3s;
   cursor: pointer;
-  border: 1px solid #ccc;
-}
+  border: 1px solid #ccc; */
+/* } */
 h2 {
   text-align: center;
 }
-li:hover {
-  transform: translate(0, 0);
+/* li:hover { */
+  /* transform: translate(0, 0);
   box-shadow: 5px 5px 7px 0 rgba(0, 0, 0, 0.2);
   background-color: #f7f7f7;
-  box-shadow: 5px 5px 7px 0 rgba(0, 0, 0, 0.2);
-}
+  box-shadow: 5px 5px 7px 0 rgba(0, 0, 0, 0.2); */
+/* } */ 
